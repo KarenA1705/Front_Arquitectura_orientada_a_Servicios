@@ -1,0 +1,47 @@
+.container-products {
+  font-family:cursive;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  border: 5cap;
+}
+
+.add{
+  margin: 5px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.white-button {
+  background-color: #2F4F4F !important; /* Forzamos el fondo blanco con !important */
+  color: white!important; /* Cambiamos el color del texto a negro con !important */
+}
+.salir-container {
+  margin-top: 20px; /* Ajusta el margen según tus preferencias */
+}
+
+.logout-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ff0000; /* Color del enlace */
+  font-size: 18px; /* Tamaño de la fuente */
+  font-family: cursive;
+  justify-content: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.logout-link i {
+  margin-right: 8px; /* Espaciado entre el icono y el texto */
+}
+

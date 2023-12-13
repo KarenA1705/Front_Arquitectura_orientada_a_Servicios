@@ -1,0 +1,19 @@
+
+<div class="salir-container">
+  <a href="#" (click)="logaut()" class="logout-link">
+    <i class="bi bi-box-arrow-left"></i> Salir
+  </a>
+</div>
+
+
+<div class="center-container">
+  <button mat-fab matTooltip="Agregar" class="white-button" (click)="save()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+<div class="container-products">
+  <app-lista
+    *ngFor="let p of elementos"
+    [productData]="p">
+  </app-lista>
+</div>

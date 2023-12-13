@@ -1,0 +1,25 @@
+<html>
+<i (click)="closeModal()" class="bi bi-x-square fs-3 text-white float-end"></i>
+<h1>Agregar Producto</h1>
+  <form [formGroup]="saveForm" (ngSubmit)="save()" id="updateProductForm" class="card">
+    <div class="form-group">
+      <label for="nombre">Nombre del Producto:</label>
+      <input  formControlName="nombre" type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="detalle">Detalle:</label>
+      <textarea  formControlName="detalle" id="detalle" name="detalle" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="valor">Precio:</label>
+      <input  formControlName="valor" type="number" id="valor" name="valor" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="img">URL Imagen:</label>
+      <textarea  formControlName="img" id="img" name="img" required></textarea>
+    </div>
+    <div class="butt">
+      <button class="btn btn-light" > Guardar </button>
+    </div>
+  </form>
+</html>

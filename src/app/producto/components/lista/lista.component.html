@@ -1,0 +1,27 @@
+
+<div class="content-card-product">
+  <div class="content-like-icon-and-img" >
+    <div class="img-padding" >
+      <img [src]="productData['img']" alt="logo">
+    </div>
+  </div>
+  <div class="content-card-body">
+    <div class="title-card">
+      <span >{{productData['nombre']}}</span>
+    </div>
+    <div>
+      <span>Descripcion: {{productData['detalle'] }}</span>
+    </div>
+    <div class="content-price-discount">
+      <div class="content-price">
+        <span class="price" >Precio:</span>
+        <span class="price-new">${{productData['valor'] }}</span>
+      </div>
+      <div class="icons">
+        <i (click)="edit(productData['id'])" class="bi bi-pencil-square"></i>
+        <i (click)="delete(productData['id'])" class="bi bi-trash3-fill"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
